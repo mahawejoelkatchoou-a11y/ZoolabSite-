@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Zoolab — Équipe</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo"><h1>Zoolab</h1><p class="tag">Carnet scientifique collaboratif</p></div>
+      <nav class="main-nav">
+        <a href="index.html">Accueil</a>
+        <a href="experiences.html">Expériences</a>
+        <a href="donnees.html">Données</a>
+        <a href="equipe.html">Équipe</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2>Équipe Zoolab</h2>
+    <p class="lead">Les membres fondateurs et contributeurs.</p>
+
+    <div class="team-grid">
+      <div class="member-card">
+        <img src="https://via.placeholder.com/150" alt="photo membre">
+        <h4>Mahawè Joèl K.</h4>
+        <p class="role">Zoogéographie & comportement animal</p>
+      </div>
+
+      <div class="member-card">
+        <img src="https://via.placeholder.com/150" alt="photo membre">
+        <h4>Adji</h4>
+        <p class="role">Observations terrain</p>
+      </div>
+
+      <div class="member-card">
+        <img src="https://via.placeholder.com/150" alt="photo membre">
+        <h4>Nom Ami</h4>
+        <p class="role">Analyses & données</p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year4"></span> Zoolab</p>
+    </div>
+  </footer>
+
+  <script>document.getElementById('year4').textContent = new Date().getFullYear();</script>
+</body>
+</html>

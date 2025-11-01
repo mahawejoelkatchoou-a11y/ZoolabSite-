@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Zoolab — Expériences</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo"><h1>Zoolab</h1><p class="tag">Carnet scientifique collaboratif</p></div>
+      <nav class="main-nav">
+        <a href="index.html">Accueil</a>
+        <a href="experiences.html">Expériences</a>
+        <a href="donnees.html">Données</a>
+        <a href="equipe.html">Équipe</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2>Expériences & Découvertes</h2>
+    <p class="lead">Liste des contributions publiées par les membres.</p>
+
+    <article id="exp1" class="post">
+      <h3>Observation d'un oiseau migrateur</h3>
+      <p class="meta">Par : Adji · 28 Oct 2025</p>
+      <p>Résumé : Observation du comportement d'alimentation le matin près d'une lisière. Matériel : caméra 12MP, carnet de notes.</p>
+      <p><strong>Photos :</strong></p>
+      <img src="https://via.placeholder.com/600x300?text=Photo+Observation" alt="photo observation" class="fullimg">
+    </article>
+
+    <article id="exp2" class="post">
+      <h3>Protocole : réponse à un stimulus olfactif (insectes)</h3>
+      <p class="meta">Par : Mahawè · 24 Oct 2025</p>
+      <p>But : Mesurer la tendance d'approche vs évitement face à un stimulus olfactif naturel.</p>
+      <details>
+        <summary>Voir protocole</summary>
+        <ol>
+          <li>Sélection des sujets (N=30).</li>
+          <li>Exposition au stimulus (30s), enregistrement vidéo (2 min).</li>
+          <li>Analyse: compter mouvements d'approche.</li>
+        </ol>
+      </details>
+    </article>
+
+    <p class="note">Pour ajouter une expérience, créez d’abord un brouillon local, puis demandez à l'administrateur de publier (version 1.0).</p>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year2"></span> Zoolab</p>
+    </div>
+  </footer>
+
+  <script>document.getElementById('year2').textContent = new Date().getFullYear();</script>
+</body>
+</html>

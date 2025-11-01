@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Zoolab — Données</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo"><h1>Zoolab</h1><p class="tag">Carnet scientifique collaboratif</p></div>
+      <nav class="main-nav">
+        <a href="index.html">Accueil</a>
+        <a href="experiences.html">Expériences</a>
+        <a href="donnees.html">Données</a>
+        <a href="equipe.html">Équipe</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2>Données biologiques</h2>
+    <p class="lead">Tableaux et visualisations (exemples).</p>
+
+    <section class="data-table">
+      <h3>Répartition d'espèces (extrait)</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Espèce</th>
+            <th>Nombre</th>
+            <th>Lieu</th>
+            <th>Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Agama sp.</td><td>12</td><td>Forêt de Kloto</td><td>2025-10-21</td></tr>
+          <tr><td>Merops sp.</td><td>3</td><td>Lagune du Sud</td><td>2025-10-11</td></tr>
+          <tr><td>Orthoptera sp.</td><td>50</td><td>Prairie Ouest</td><td>2025-09-30</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="data-note">
+      <h3>Graphiques</h3>
+      <p>Pour ajouter des graphiques interactifs : on pourra intégrer <code>Chart.js</code> ou <code>D3.js</code>. Ici, on laisse un emplacement visuel :</p>
+      <div class="chart-placeholder">[Graphique interactif : à implémenter]</div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year3"></span> Zoolab</p>
+    </div>
+  </footer>
+
+  <script>document.getElementById('year3').textContent = new Date().getFullYear();</script>
+</body>
+</html>

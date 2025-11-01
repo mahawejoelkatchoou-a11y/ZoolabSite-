@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Zoolab — Contact</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo"><h1>Zoolab</h1><p class="tag">Carnet scientifique collaboratif</p></div>
+      <nav class="main-nav">
+        <a href="index.html">Accueil</a>
+        <a href="experiences.html">Expériences</a>
+        <a href="donnees.html">Données</a>
+        <a href="equipe.html">Équipe</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2>Contact</h2>
+    <p class="lead">Envie de participer ou une question ? Écris-nous.</p>
+
+    <!-- Formulaire simple (fonctionne avec mailto) -->
+    <form class="contact-form" action="mailto:ton.email@example.com" method="post" enctype="text/plain">
+      <label>Nom
+        <input type="text" name="nom" placeholder="Ton nom" required>
+      </label>
+
+      <label>Email
+        <input type="email" name="email" placeholder="ton@email.com" required>
+      </label>
+
+      <label>Message
+        <textarea name="message" rows="5" placeholder="Ton message..." required></textarea>
+      </label>
+
+      <button class="btn primary" type="submit">Envoyer</button>
+    </form>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year5"></span> Zoolab</p>
+    </div>
+  </footer>
+
+  <script>document.getElementById('year5').textContent = new Date().getFullYear();</script>
+</body>
+</html>

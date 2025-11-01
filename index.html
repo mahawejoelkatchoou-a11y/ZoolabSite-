@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Zoolab — Accueil</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <!-- Google Font (optionnel) -->
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">
+        <h1>Zoolab</h1>
+        <p class="tag">Carnet scientifique collaboratif</p>
+      </div>
+      <nav class="main-nav">
+        <a href="index.html">Accueil</a>
+        <a href="experiences.html">Expériences</a>
+        <a href="donnees.html">Données</a>
+        <a href="equipe.html">Équipe</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h2>Bienvenue sur Zoolab</h2>
+      <p>Un carnet collectif pour partager observations, expériences et données en biologie animale.</p>
+      <a class="btn primary" href="experiences.html">Voir les dernières découvertes</a>
+    </section>
+
+    <section class="cards">
+      <h3>Découvertes récentes</h3>
+      <div class="grid">
+        <article class="card">
+          <h4>Observation — Oiseau migrateur</h4>
+          <p class="meta">Par : Adji · 28 Oct 2025 · Région : Forêt de Kloto</p>
+          <p>Comportement de nourrissage observé chez deux espèces en coexistence. Photos & notes.</p>
+          <a class="btn small" href="experiences.html#exp1">Lire</a>
+        </article>
+
+        <article class="card">
+          <h4>Expérience — Réaction comportementale</h4>
+          <p class="meta">Par : Mahawè · 24 Oct 2025 · Labo U</p>
+          <p>Protocole simple sur la réponse à un stimulus olfactif chez insectes locaux.</p>
+          <a class="btn small" href="experiences.html#exp2">Lire</a>
+        </article>
+
+        <article class="card">
+          <h4>Donnée — Répartition d'espèces</h4>
+          <p class="meta">Par : Équipe Zoolab · 20 Oct 2025</p>
+          <p>Tableau récapitulatif et carte sommaire des enregistrements.</p>
+          <a class="btn small" href="donnees.html">Explorer</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="about">
+      <h3>Pourquoi Zoolab ?</h3>
+      <p>Zoolab facilite le partage d'observations sur le terrain et la centralisation de petites expériences et ensembles de données — parfait pour étudiants et chercheurs locaux.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Zoolab — Construit par la communauté étudiante</p>
+      <p><small>Contact : <a href="contact.html">Page contact</a></small></p>
+    </div>
+  </footer>
+
+  <script>
+    // année dynamique
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
